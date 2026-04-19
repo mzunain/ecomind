@@ -52,7 +52,7 @@ export async function POST(request: NextRequest) {
     }
 
     const model = genAI.getGenerativeModel({
-      model: 'gemini-1.5-flash-latest',
+      model: 'gemini-pro',
       generationConfig: {
         responseMimeType: 'application/json',
         responseSchema: ecoAnalysisSchema as any,
